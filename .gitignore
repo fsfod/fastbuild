@@ -65,3 +65,7 @@ External/SDK/Windows/*/
 Network Trash Folder
 Temporary Items
 .apdisk
+/External/SDK/VisualStudio/VS2019Gen.bff
+/External/SDK/VisualStudio/VS2022Gen.bff
+/External/SDK/Windows/Win10SDKGen.bff
+/External/SDK/VisualStudio/VS2017Gen.bff

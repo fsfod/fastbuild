@@ -70,6 +70,10 @@
     #endif
 #endif
 
+#if file_exists( "VS2019Gen.bff" )
+  #include "VS2019Gen.bff"
+#endif
+
 .VS2019_ToolchainPath   = '$VS2019_BasePath$/Tools/MSVC/$VS2019_Version$'
 
 // X64 Compiler

@@ -44,6 +44,7 @@
                 .VS2022_Version         = '14.31.31103'
                 .VS2022_MSC_VER         = '1931'
             #else
+              #if !file_exists( "VS2022Gen.bff" )
                 //
                 // Failed
                 //
@@ -53,9 +54,14 @@
                 .VS2022_BasePath        = .Set_Path_Here    // <-- Set path here
                 .VS2022_Version         = .Set_Version_Here // <-- Set version here
                 .VS2022_MSC_VER         = .Set_MSC_VER_Here // <-- Set MSC_VER here
+              #endif
             #endif
         #endif
     #endif
+#endif
+
+#if file_exists( "VS2022Gen.bff" )
+  #include "VS2022Gen.bff"
 #endif
 
 .VS2022_ToolchainPath   = '$VS2022_BasePath$/Tools/MSVC/$VS2022_Version$'
